@@ -33,3 +33,12 @@ func update_animation_parameters():
 	if(direction != Vector2.ZERO):
 		animation_tree["parameters/idle/blend_position"] = direction
 		animation_tree["parameters/walk/blend_position"] = direction
+
+
+
+
+
+
+
+func _on_area_2d_body_entered(body):
+	pass # Replace with function body.

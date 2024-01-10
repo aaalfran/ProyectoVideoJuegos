@@ -221,11 +221,7 @@ graph_offset = Vector2(-71.8032, -1.60517)
 position = Vector2(40, 33)
 script = ExtResource("1_7a66b")
 
-[node name="Camera2D" type="Camera2D" parent="."]
-limit_left = -100000
-limit_top = -100000
-limit_right = 100000
-limit_bottom = 100000
+[node name="Camera2DBlock" type="Camera2D" parent="."]
 limit_smoothed = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
