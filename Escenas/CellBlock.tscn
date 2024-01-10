@@ -54607,7 +54607,6 @@ script = ExtResource("23_yplqy")
 process_priority = 1
 process_physics_priority = 1
 position = Vector2(-2501.32, -51.6864)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_sb24d")
 
 [node name="Area2D" type="Area2D" parent="TileMap_Block"]
