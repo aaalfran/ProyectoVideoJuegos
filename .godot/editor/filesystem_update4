@@ -1,1 +1,5 @@
-res://MainGame.tscn
+res://personajes/policiabasico.tscn
+res://Escenas/CellBlock.tscn
+res://scripts/policiabasico.gd
+res://personajes/bumper.tscn
+res://personajes/personajePrincipal.tscn

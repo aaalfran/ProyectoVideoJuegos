@@ -222,10 +222,10 @@ position = Vector2(40, 33)
 script = ExtResource("1_7a66b")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-limit_left = 0
-limit_top = 0
-limit_right = 1200
-limit_bottom = 1250
+limit_left = -100000
+limit_top = -100000
+limit_right = 100000
+limit_bottom = 100000
 limit_smoothed = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

@@ -1,0 +1,52 @@
+[gd_scene load_steps=8 format=3 uid="uid://dxwnscspx0yls"]
+
+[ext_resource type="Script" path="res://scripts/policiabasico.gd" id="1_0mma7"]
+[ext_resource type="Texture2D" uid="uid://c4ussmglggvt2" path="res://assets/Gh.png" id="1_ocb53"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jsit4"]
+atlas = ExtResource("1_ocb53")
+region = Rect2(0, 71, 52, 71)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ilcsy"]
+atlas = ExtResource("1_ocb53")
+region = Rect2(52, 71, 52, 71)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d7hht"]
+atlas = ExtResource("1_ocb53")
+region = Rect2(104, 71, 52, 71)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_l8p5c"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jsit4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ilcsy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d7hht")
+}],
+"loop": true,
+"name": &"movderecha",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nc5el"]
+size = Vector2(39.5, 78.75)
+
+[node name="policiabasico" type="CharacterBody2D"]
+slide_on_ceiling = false
+script = ExtResource("1_0mma7")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(72, 44.75)
+scale = Vector2(1.53846, 1.5)
+sprite_frames = SubResource("SpriteFrames_l8p5c")
+animation = &"movderecha"
+autoplay = "movderecha"
+frame_progress = 0.952579
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(72.25, 44.625)
+shape = SubResource("RectangleShape2D_nc5el")

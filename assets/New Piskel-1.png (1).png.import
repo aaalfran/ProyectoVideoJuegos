@@ -15,7 +15,7 @@ dest_files=["res://.godot/imported/New Piskel-1.png (1).png-acd468a4fdf3bcc50392
 
 [params]
 
-compress/mode=0
+compress/mode=3
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1

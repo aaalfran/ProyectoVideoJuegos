@@ -15,7 +15,7 @@ dest_files=["res://.godot/imported/jail_pipes.png-b3ff09f8395453e9b3d5c8d7c2c1f2
 
 [params]
 
-compress/mode=0
+compress/mode=3
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1

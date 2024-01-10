@@ -15,7 +15,7 @@ dest_files=["res://.godot/imported/comedor.png-efde8bf0cda69f195dc081c6e8d815a2.
 
 [params]
 
-compress/mode=0
+compress/mode=3
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
