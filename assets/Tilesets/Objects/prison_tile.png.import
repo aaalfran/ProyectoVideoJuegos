@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c4ussmglggvt2"
-path="res://.godot/imported/Gh.png-6be82175ed81b2dc3ac9beba6e75f091.ctex"
+uid="uid://bbi6hndfseigt"
+path="res://.godot/imported/prison_tile.png-191822631b1862d24753ac4e41b1021c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Gh.png"
-dest_files=["res://.godot/imported/Gh.png-6be82175ed81b2dc3ac9beba6e75f091.ctex"]
+source_file="res://assets/Tilesets/Objects/prison_tile.png"
+dest_files=["res://.godot/imported/prison_tile.png-191822631b1862d24753ac4e41b1021c.ctex"]
 
 [params]
 

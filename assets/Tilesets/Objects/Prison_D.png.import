@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://21k18x0jlux0"
-path="res://.godot/imported/$Prisoner-M-31.png-f26715608ee8e1ed3cb385960d4c0fab.ctex"
+uid="uid://bfkcdb5iv6jmg"
+path="res://.godot/imported/Prison_D.png-745376f2100ddb348c657c7ca4a3e2dd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/$Prisoner-M-31.png"
-dest_files=["res://.godot/imported/$Prisoner-M-31.png-f26715608ee8e1ed3cb385960d4c0fab.ctex"]
+source_file="res://assets/Tilesets/Objects/Prison_D.png"
+dest_files=["res://.godot/imported/Prison_D.png-745376f2100ddb348c657c7ca4a3e2dd.ctex"]
 
 [params]
 

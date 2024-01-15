@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b0w1ekxlbipj1"
-path="res://.godot/imported/!$PrisonerSoldier-01.png-af241e16a1da38e4ce26830252fa5c3b.ctex"
+uid="uid://e72u7ma088qf"
+path="res://.godot/imported/Basketball and hoop.png-a00998de30d511b4fbfe6af2c99c41ad.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/!$PrisonerSoldier-01.png"
-dest_files=["res://.godot/imported/!$PrisonerSoldier-01.png-af241e16a1da38e4ce26830252fa5c3b.ctex"]
+source_file="res://assets/Tilesets/Objects/Basketball and hoop.png"
+dest_files=["res://.godot/imported/Basketball and hoop.png-a00998de30d511b4fbfe6af2c99c41ad.ctex"]
 
 [params]
 

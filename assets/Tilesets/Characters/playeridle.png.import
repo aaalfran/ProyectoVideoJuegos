@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bahqafoiigff1"
-path="res://.godot/imported/SlashThunder.png-c0fbba8b14151e4b6d68ec2a143de020.ctex"
+uid="uid://dy2bsglvk5nxv"
+path="res://.godot/imported/playeridle.png-e631bbe01cdf7ea37e3ad9930251b70f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/SlashThunder.png"
-dest_files=["res://.godot/imported/SlashThunder.png-c0fbba8b14151e4b6d68ec2a143de020.ctex"]
+source_file="res://assets/Tilesets/Characters/playeridle.png"
+dest_files=["res://.godot/imported/playeridle.png-e631bbe01cdf7ea37e3ad9930251b70f.ctex"]
 
 [params]
 

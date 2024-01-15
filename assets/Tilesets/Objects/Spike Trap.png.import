@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://coa6j6toaqc0f"
-path="res://.godot/imported/wall_cobblestone_64px.png-53d7ae9d560dc9c77e1e04505dd1bfaa.ctex"
+uid="uid://c5nk4becfv5ni"
+path="res://.godot/imported/Spike Trap.png-5aae0c114c215203a8c586d7f4875abb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/wall_cobblestone_64px.png"
-dest_files=["res://.godot/imported/wall_cobblestone_64px.png-53d7ae9d560dc9c77e1e04505dd1bfaa.ctex"]
+source_file="res://assets/Tilesets/Objects/Spike Trap.png"
+dest_files=["res://.godot/imported/Spike Trap.png-5aae0c114c215203a8c586d7f4875abb.ctex"]
 
 [params]
 
-compress/mode=3
+compress/mode=0
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1

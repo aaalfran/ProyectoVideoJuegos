@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bh8ykaygbg4st"
-path="res://.godot/imported/comedor.png-efde8bf0cda69f195dc081c6e8d815a2.ctex"
+uid="uid://c65ir65ahdnu4"
+path="res://.godot/imported/Prison_B.png-2e3c241b75c4788311bbabde0f8380b9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/comedor.png"
-dest_files=["res://.godot/imported/comedor.png-efde8bf0cda69f195dc081c6e8d815a2.ctex"]
+source_file="res://assets/Tilesets/Terrains/Prison_B.png"
+dest_files=["res://.godot/imported/Prison_B.png-2e3c241b75c4788311bbabde0f8380b9.ctex"]
 
 [params]
 

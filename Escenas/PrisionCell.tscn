@@ -1,9 +1,9 @@
 [gd_scene load_steps=13 format=3 uid="uid://dlpvwttuwhf0t"]
 
 [ext_resource type="PackedScene" uid="uid://81h8tudlyxjc" path="res://personajes/personajePrincipal.tscn" id="1_hvnfr"]
-[ext_resource type="Texture2D" uid="uid://ommyi8t3vid4" path="res://assets/wall_bricks.png" id="2_rdnps"]
-[ext_resource type="Texture2D" uid="uid://bbi6hndfseigt" path="res://assets/prison_tile.png" id="3_mn1ny"]
-[ext_resource type="Texture2D" uid="uid://coa6j6toaqc0f" path="res://assets/wall_cobblestone_64px.png" id="4_03eu2"]
+[ext_resource type="Texture2D" uid="uid://ommyi8t3vid4" path="res://assets/Tilesets/Terrains/wall_bricks.png" id="2_rdnps"]
+[ext_resource type="Texture2D" uid="uid://bbi6hndfseigt" path="res://assets/Tilesets/Objects/prison_tile.png" id="3_mn1ny"]
+[ext_resource type="Texture2D" uid="uid://coa6j6toaqc0f" path="res://assets/Tilesets/Terrains/wall_cobblestone_64px.png" id="4_03eu2"]
 [ext_resource type="Script" path="res://Escenas/Area2D.gd" id="5_d7qoe"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ljywl"]

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://coullxqlgch3y"
-path="res://.godot/imported/WhatsApp Image 2024-01-07 at 22.12.35_afcf9a05.jpg-319beddcac7a1d12795ee124be1ab6bd.ctex"
+uid="uid://cpnjysx24qvoa"
+path="res://.godot/imported/PrisonPatio.png-616f3ec5b094574b24a0cd0ffcfad191.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/WhatsApp Image 2024-01-07 at 22.12.35_afcf9a05.jpg"
-dest_files=["res://.godot/imported/WhatsApp Image 2024-01-07 at 22.12.35_afcf9a05.jpg-319beddcac7a1d12795ee124be1ab6bd.ctex"]
+source_file="res://assets/Tilesets/Terrains/PrisonPatio.png"
+dest_files=["res://.godot/imported/PrisonPatio.png-616f3ec5b094574b24a0cd0ffcfad191.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c1eadylxgm6m2"
-path="res://.godot/imported/New Piskel-1.png (1).png-acd468a4fdf3bcc50392755f6b4a3fa4.ctex"
+uid="uid://cv6bi5sdq5jjn"
+path="res://.godot/imported/Prison_A5.png-40f453c7bd62252b9308dafb59a6a23f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/New Piskel-1.png (1).png"
-dest_files=["res://.godot/imported/New Piskel-1.png (1).png-acd468a4fdf3bcc50392755f6b4a3fa4.ctex"]
+source_file="res://assets/Tilesets/Terrains/Prison_A5.png"
+dest_files=["res://.godot/imported/Prison_A5.png-40f453c7bd62252b9308dafb59a6a23f.ctex"]
 
 [params]
 

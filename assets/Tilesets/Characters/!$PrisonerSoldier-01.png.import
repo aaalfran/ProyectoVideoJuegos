@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://4jot2jllmlwv"
-path="res://.godot/imported/Terrain (16x16).png-08440d825000be5cd6a24cdf2c2e8ddf.ctex"
+uid="uid://b0w1ekxlbipj1"
+path="res://.godot/imported/!$PrisonerSoldier-01.png-fcfe7187a4ce3ab5b8e4e6ff91fc8c21.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Terrain (16x16).png"
-dest_files=["res://.godot/imported/Terrain (16x16).png-08440d825000be5cd6a24cdf2c2e8ddf.ctex"]
+source_file="res://assets/Tilesets/Characters/!$PrisonerSoldier-01.png"
+dest_files=["res://.godot/imported/!$PrisonerSoldier-01.png-fcfe7187a4ce3ab5b8e4e6ff91fc8c21.ctex"]
 
 [params]
 
-compress/mode=3
+compress/mode=0
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1

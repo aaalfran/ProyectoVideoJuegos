@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dy2bsglvk5nxv"
-path="res://.godot/imported/playeridle.png-aa8c6d912bbc0fee59a526cb6b891bc4.ctex"
+uid="uid://c1eadylxgm6m2"
+path="res://.godot/imported/New Piskel-1.png (1).png-fa0b23ddd71e07fb4d21dc65e97ae1e3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/playeridle.png"
-dest_files=["res://.godot/imported/playeridle.png-aa8c6d912bbc0fee59a526cb6b891bc4.ctex"]
+source_file="res://assets/Tilesets/Terrains/New Piskel-1.png (1).png"
+dest_files=["res://.godot/imported/New Piskel-1.png (1).png-fa0b23ddd71e07fb4d21dc65e97ae1e3.ctex"]
 
 [params]
 

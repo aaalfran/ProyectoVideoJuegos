@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dtwfwxjin0kvp"
-path="res://.godot/imported/Prison_C.png-ee978641df29e553a081deae4b010886.ctex"
+uid="uid://coa6j6toaqc0f"
+path="res://.godot/imported/wall_cobblestone_64px.png-59d576e5c7316b5813bc99dc9d2e21d7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Prison_C.png"
-dest_files=["res://.godot/imported/Prison_C.png-ee978641df29e553a081deae4b010886.ctex"]
+source_file="res://assets/Tilesets/Terrains/wall_cobblestone_64px.png"
+dest_files=["res://.godot/imported/wall_cobblestone_64px.png-59d576e5c7316b5813bc99dc9d2e21d7.ctex"]
 
 [params]
 

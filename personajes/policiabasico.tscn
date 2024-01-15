@@ -1,7 +1,8 @@
 [gd_scene load_steps=8 format=3 uid="uid://dxwnscspx0yls"]
 
 [ext_resource type="Script" path="res://scripts/policiabasico.gd" id="1_0mma7"]
-[ext_resource type="Texture2D" uid="uid://c4ussmglggvt2" path="res://assets/Gh.png" id="1_ocb53"]
+[ext_resource type="Texture2D" uid="uid://c4ussmglggvt2" path="res://assets/Tilesets/Characters/Gh.png" id="1_ocb53"]
+
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jsit4"]
 atlas = ExtResource("1_ocb53")

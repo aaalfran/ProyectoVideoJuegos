@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://eff2syglvgei"
-path="res://.godot/imported/patioassets.png-8189b27fcc19d58105a50d4682f6784c.ctex"
+uid="uid://bqdrk2ukne38d"
+path="res://.godot/imported/phone.png-54dcaeb6f85f827d9f57ae9f9a6b9666.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/patioassets.png"
-dest_files=["res://.godot/imported/patioassets.png-8189b27fcc19d58105a50d4682f6784c.ctex"]
+source_file="res://assets/Tilesets/Objects/phone.png"
+dest_files=["res://.godot/imported/phone.png-54dcaeb6f85f827d9f57ae9f9a6b9666.ctex"]
 
 [params]
 

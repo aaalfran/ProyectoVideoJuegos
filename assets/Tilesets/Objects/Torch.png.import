@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c65ir65ahdnu4"
-path="res://.godot/imported/Prison_B.png-d875f10b62dbba1e030e21ee24dd9689.ctex"
+uid="uid://cijko3ao2plo7"
+path="res://.godot/imported/Torch.png-6bc0abf21d6688041ad0b0d0ed61ff36.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Prison_B.png"
-dest_files=["res://.godot/imported/Prison_B.png-d875f10b62dbba1e030e21ee24dd9689.ctex"]
+source_file="res://assets/Tilesets/Objects/Torch.png"
+dest_files=["res://.godot/imported/Torch.png-6bc0abf21d6688041ad0b0d0ed61ff36.ctex"]
 
 [params]
 
-compress/mode=3
+compress/mode=0
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1

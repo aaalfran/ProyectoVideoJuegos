@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ommyi8t3vid4"
-path="res://.godot/imported/wall_bricks.png-a377e1fb716f5c37a477bfd6ba6b677a.ctex"
+uid="uid://21k18x0jlux0"
+path="res://.godot/imported/$Prisoner-M-31.png-fdac2e61ba0ed65747c0e24eeded48ce.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/wall_bricks.png"
-dest_files=["res://.godot/imported/wall_bricks.png-a377e1fb716f5c37a477bfd6ba6b677a.ctex"]
+source_file="res://assets/Tilesets/Characters/$Prisoner-M-31.png"
+dest_files=["res://.godot/imported/$Prisoner-M-31.png-fdac2e61ba0ed65747c0e24eeded48ce.ctex"]
 
 [params]
 

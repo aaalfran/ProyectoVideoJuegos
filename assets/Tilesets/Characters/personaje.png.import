@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://di23hfd11l3kb"
-path="res://.godot/imported/TileSet_Dunegonjual.png-af38a2afd5a14c54a777ea26aa047ba8.ctex"
+uid="uid://bgan53cdpftq7"
+path="res://.godot/imported/personaje.png-a49bf8ad5f0d9a438196e18646ad0cd6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/TileSet_Dunegonjual.png"
-dest_files=["res://.godot/imported/TileSet_Dunegonjual.png-af38a2afd5a14c54a777ea26aa047ba8.ctex"]
+source_file="res://assets/Tilesets/Characters/personaje.png"
+dest_files=["res://.godot/imported/personaje.png-a49bf8ad5f0d9a438196e18646ad0cd6.ctex"]
 
 [params]
 
-compress/mode=3
+compress/mode=0
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
