@@ -1,1 +1,5 @@
+res://personajes/personajePrincipal.gd
 res://Escenas/CellBlock.tscn
+res://scripts/policiabasico.gd
+res://scripts/trampas.gd
+res://personajes/personajePrincipal.tscn

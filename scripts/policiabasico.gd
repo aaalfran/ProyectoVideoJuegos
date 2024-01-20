@@ -17,6 +17,3 @@ func _process(delta):
 		$AnimatedSprite2D.flip_h=true
 
 
-
-func _on_area_2d_body_entered(body):
-	pass # Replace with function body.
