@@ -1,9 +1,8 @@
 [gd_scene load_steps=8 format=3 uid="uid://dlpvwttuwhf0t"]
 
 [ext_resource type="Texture2D" uid="uid://c1eadylxgm6m2" path="res://assets/Tilesets/Terrains/New Piskel-1.png (1).png" id="1_0ootr"]
-[ext_resource type="Texture2D" uid="uid://ommyi8t3vid4" path="res://assets/wall_bricks.png" id="2_k8xr3"]
-[ext_resource type="Texture2D" uid="uid://bbi6hndfseigt" path="res://assets/prison_tile.png" id="3_rtgq5"]
-
+[ext_resource type="Texture2D" uid="uid://ommyi8t3vid4" path="res://assets/Tilesets/Terrains/wall_bricks.png" id="2_k8xr3"]
+[ext_resource type="Texture2D" uid="uid://bbi6hndfseigt" path="res://assets/Tilesets/Objects/prison_tile.png" id="3_rtgq5"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rwr17"]
 texture = ExtResource("1_0ootr")

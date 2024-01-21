@@ -1,5 +1,4 @@
-res://personajes/personajePrincipal.gd
-res://Escenas/CellBlock.tscn
-res://scripts/policiabasico.gd
-res://scripts/trampas.gd
 res://personajes/personajePrincipal.tscn
+res://Escenas/tile_screen.tscn
+res://MainMenu.tscn
+res://MainGame.tscn
