@@ -2,21 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://di23hfd11l3kb"
-path.s3tc="res://.godot/imported/TileSet_Dunegonjual.png-403f3da2e64c1eaac8bdf3ddacde7f36.s3tc.ctex"
+uid="uid://5ldsrtojcgev"
+path="res://.godot/imported/island.jpg-65aa207c77a3e95c0189ea4571f25771.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
+"vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Tilesets/Terrains/TileSet_Dunegonjual.png"
-dest_files=["res://.godot/imported/TileSet_Dunegonjual.png-403f3da2e64c1eaac8bdf3ddacde7f36.s3tc.ctex"]
+source_file="res://assets/Tilesets/background/island.jpg"
+dest_files=["res://.godot/imported/island.jpg-65aa207c77a3e95c0189ea4571f25771.ctex"]
 
 [params]
 
-compress/mode=2
+compress/mode=0
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
