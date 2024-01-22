@@ -13,4 +13,5 @@ func _process(delta):
 
 func _on_body_entered(body):
 	if body.is_in_group("Player"):
-		get_tree().change_scene_to_file("res://Escenas/Patio.tscn")
+		print("Te atraparon por cojudo")
+		get_tree().change_scene_to_file("res://Escenas/PrisionCell.tscn")

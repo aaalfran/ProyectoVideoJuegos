@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://81h8tudlyxjc" path="res://personajes/personajePrincipal.tscn" id="1_ijm8y"]
 [ext_resource type="Texture2D" uid="uid://ommyi8t3vid4" path="res://assets/Tilesets/Terrains/wall_bricks.png" id="2_m1ysp"]
 [ext_resource type="Texture2D" uid="uid://bbi6hndfseigt" path="res://assets/Tilesets/Objects/prison_tile.png" id="3_kkfph"]
-[ext_resource type="PackedScene" uid="uid://ch85463cin7fs" path="res://personajes/bumper.tscn" id="3_o8c70"]
+[ext_resource type="PackedScene" uid="uid://ch85463cin7fs" path="res://bumper.tscn" id="3_o8c70"]
 [ext_resource type="Texture2D" uid="uid://coa6j6toaqc0f" path="res://assets/Tilesets/Terrains/wall_cobblestone_64px.png" id="4_i06qc"]
 [ext_resource type="Texture2D" uid="uid://bh8ykaygbg4st" path="res://assets/Tilesets/Objects/comedor.png" id="4_ilvi3"]
 [ext_resource type="Texture2D" uid="uid://dtwfwxjin0kvp" path="res://assets/Tilesets/Terrains/Prison_C.png" id="5_06ii5"]
@@ -55559,10 +55559,10 @@ size = Vector2(9.22181, 16.2049)
 size = Vector2(49.1206, 67.3631)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ivi4b"]
-size = Vector2(100, 97)
+size = Vector2(100, 70.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dhoii"]
-size = Vector2(118, 114)
+size = Vector2(118, 85)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2dwmt"]
 texture = ExtResource("7_5jrgc")
@@ -58804,12 +58804,14 @@ shape = SubResource("RectangleShape2D_4h8cl")
 position = Vector2(-2542, -1702)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CambioNivel"]
+position = Vector2(0, 13.25)
 shape = SubResource("RectangleShape2D_ivi4b")
 
 [node name="Area2D" type="Area2D" parent="CambioNivel"]
 script = ExtResource("24_hpith")
 
 [node name="CollisionShape2DBlockArea" type="CollisionShape2D" parent="CambioNivel/Area2D"]
+position = Vector2(0, 14.5)
 shape = SubResource("RectangleShape2D_dhoii")
 
 [node name="TileMap" type="TileMap" parent="CambioNivel"]

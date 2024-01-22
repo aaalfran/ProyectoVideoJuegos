@@ -3,7 +3,6 @@
 [ext_resource type="Script" path="res://personajes/personajePrincipal.gd" id="1_7a66b"]
 [ext_resource type="Texture2D" uid="uid://bgan53cdpftq7" path="res://assets/Tilesets/Characters/personaje.png" id="2_8rx5x"]
 
-
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_262rs"]
 radius = 23.0
 height = 66.0

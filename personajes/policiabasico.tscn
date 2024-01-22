@@ -1,8 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://dxwnscspx0yls"]
+[gd_scene load_steps=10 format=3 uid="uid://dxwnscspx0yls"]
 
 [ext_resource type="Script" path="res://scripts/policiabasico.gd" id="1_0mma7"]
 [ext_resource type="Texture2D" uid="uid://c4ussmglggvt2" path="res://assets/Tilesets/Characters/Gh.png" id="1_ocb53"]
-
+[ext_resource type="Texture2D" uid="uid://daevinr08hq1o" path="res://assets/Tilesets/Objects/visualcone.png" id="3_kbb2x"]
+[ext_resource type="Script" path="res://scripts/ConoArea.gd" id="4_ew3o2"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jsit4"]
 atlas = ExtResource("1_ocb53")
@@ -51,3 +52,15 @@ frame_progress = 0.952579
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(72.25, 44.625)
 shape = SubResource("RectangleShape2D_nc5el")
+
+[node name="Visualcone" type="Sprite2D" parent="."]
+position = Vector2(218, 33)
+texture = ExtResource("3_kbb2x")
+
+[node name="Area2D" type="Area2D" parent="Visualcone"]
+script = ExtResource("4_ew3o2")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Visualcone/Area2D"]
+polygon = PackedVector2Array(-131, 2, 112, 74, 132, 29, 132, -42, 112, -73)
+
+[connection signal="body_entered" from="Visualcone/Area2D" to="Visualcone/Area2D" method="_on_body_entered"]
