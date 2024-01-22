@@ -1,1 +1,15 @@
 res://Escenas/CellBlock.tscn
+res://personajes/policiabasico.tscn
+res://Escenas/Patio.tscn
+res://Escenas/PrisionCell.tscn
+res://MainGame.tscn
+res://MainMenu.tscn
+res://personajes/personajePrincipal.tscn
+res://scripts/policiabasico.gd
+res://Objects/Camera.tscn
+res://Objects/BreakerBox.tscn
+res://Objects/BreakerBox.gd
+res://scripts/Area2DBB.gd
+res://Objects/Camera.gd
+res://scripts/Area2DBB2.gd
+res://scripts/Camera.gd
