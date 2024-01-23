@@ -1,3 +1,6 @@
+CollisionShape2D
+Sprite2D
+Area2D
 TextureRect
 Label
 Button
@@ -5,21 +8,12 @@ VBoxContainer
 Control
 PanelContainer
 TileMap
-Area2D
-<<<<<<< HEAD
 TileMap
 CollisionPolygon2D
 AnimatedSprite2D
-=======
-CollisionShape2D
->>>>>>> cb8c119d2585f23762582974174942b3e4a4a7a3
 StaticBody2D
 AnimatedSprite2D
 Node2D
 CharacterBody2D
-Sprite2D
 Node
-<<<<<<< HEAD
 TextureRect
-=======
->>>>>>> cb8c119d2585f23762582974174942b3e4a4a7a3

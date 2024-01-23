@@ -1,4 +1,4 @@
-[gd_scene load_steps=90 format=3 uid="uid://b7kpwqm3cvufa"]
+[gd_scene load_steps=91 format=3 uid="uid://b7kpwqm3cvufa"]
 
 [ext_resource type="PackedScene" uid="uid://81h8tudlyxjc" path="res://personajes/personajePrincipal.tscn" id="1_ijm8y"]
 [ext_resource type="Texture2D" uid="uid://ommyi8t3vid4" path="res://assets/Tilesets/Terrains/wall_bricks.png" id="2_m1ysp"]
@@ -22,6 +22,7 @@
 [ext_resource type="Texture2D" uid="uid://c5nk4becfv5ni" path="res://assets/Tilesets/Objects/Spike Trap.png" id="18_wuofc"]
 [ext_resource type="Texture2D" uid="uid://cmdtqogjbrri8" path="res://assets/Tilesets/Objects/Fire_Trap.png" id="22_lntsd"]
 [ext_resource type="Script" path="res://scripts/trampas.gd" id="22_wn3eg"]
+[ext_resource type="PackedScene" uid="uid://b6pcnn3gnc6v" path="res://Objects/llave.tscn" id="24_0u7uk"]
 [ext_resource type="Script" path="res://Escenas/BlockArea.gd" id="24_hpith"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_isnxl"]
@@ -60915,10 +60916,11 @@ sources/3 = SubResource("TileSetAtlasSource_e21p7")
 sources/2 = SubResource("TileSetAtlasSource_6w78a")
 
 [node name="CellBlock" type="Node2D"]
-position = Vector2(3508, 4131)
+position = Vector2(3495, 4165)
+scale = Vector2(1.07488, 1.05491)
 
 [node name="TileMap_Block" type="TileMap" parent="."]
-position = Vector2(-3313, -4036)
+position = Vector2(-3215, -3928)
 scale = Vector2(0.992052, 1.02909)
 tile_set = SubResource("TileSet_6tdqb")
 collision_animatable = true
@@ -61179,7 +61181,7 @@ sprite_frames = SubResource("SpriteFrames_tu7ch")
 autoplay = "default"
 
 [node name="CambioNivel" type="StaticBody2D" parent="."]
-position = Vector2(-2542, -1702)
+position = Vector2(-2529, -1594)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CambioNivel"]
 position = Vector2(0, 13.25)
@@ -61198,6 +61200,10 @@ format = 2
 layer_0/tile_data = PackedInt32Array(-3, 1507328, 16, 65533, 1507328, 17, 131069, 1507328, 18, 196605, 1507328, 19, -2, 1572864, 16, 65534, 1572864, 17, 131070, 1572864, 18, 196606, 1572864, 19, -1, 1638400, 16, 65535, 1638400, 17, 131071, 1638400, 18, 196607, 1638400, 19, -65536, 1703936, 16, 0, 1703936, 17, 65536, 1703936, 18, 131072, 1703936, 19, -65535, 1769472, 16, 1, 1769472, 17, 65537, 1769472, 18, 131073, 1769472, 19, -65534, 1835008, 16, 2, 1835008, 17, 65538, 1835008, 18, 131074, 1835008, 19)
 metadata/_edit_lock_ = true
 
+[node name="Llave" parent="." instance=ExtResource("24_0u7uk")]
+position = Vector2(-2923, -3632)
+
 [connection signal="body_entered" from="TileMap_Block/Area2D" to="TileMap_Block/Area2D" method="_on_body_entered"]
 [connection signal="body_entered" from="TileMap_Block/trampas" to="TileMap_Block/trampas" method="_on_body_entered"]
 [connection signal="body_entered" from="CambioNivel/Area2D" to="CambioNivel/Area2D" method="_on_body_entered"]
+[connection signal="puerta_llave" from="Llave" to="CambioNivel/Area2D" method="_on_llave_puerta_llave"]

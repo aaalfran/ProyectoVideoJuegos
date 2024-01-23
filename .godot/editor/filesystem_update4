@@ -1,12 +1,3 @@
-res://scripts/AnimatedSprite2D.gd
-res://Escenas/Area2D.gd
-res://scripts/Area2DBB2.gd
-res://scripts/Area2DBB.gd
+res://scripts/Llave.gd
+res://Escenas/CellBlock.tscn
 res://Escenas/BlockArea.gd
-res://Objects/Camera.gd
-res://scripts/Camera.gd
-res://scripts/ConoArea.gd
-res://personajes/personajePrincipal.gd
-res://scripts/phone.gd
-res://scripts/policiabasico.gd
-res://scripts/spike.gd

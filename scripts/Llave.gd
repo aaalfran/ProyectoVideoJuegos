@@ -1,6 +1,5 @@
 extends Area2D
-
-var llave = false
+signal puerta_llave
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -13,9 +12,7 @@ func _process(delta):
 
 
 func _on_body_entered(body):
-	if body.is_in_group("Player") and llave ==true:
-		get_tree().change_scene_to_file("res://Escenas/Patio.tscn")
-
-
-func _on_llave_puerta_llave():
-	llave =true
+	if body.is_in_group("Player"):
+		emit_signal("puerta_llave")
+		queue_free()
+		
