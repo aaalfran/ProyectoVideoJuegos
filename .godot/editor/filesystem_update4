@@ -1,3 +1,7 @@
 res://scripts/Llave.gd
 res://Escenas/CellBlock.tscn
 res://Escenas/BlockArea.gd
+res://Escenas/fakeroom.tscn
+res://personajes/shuriken.tscn
+res://scripts/policiabasico.gd
+res://scripts/shuriken.gd

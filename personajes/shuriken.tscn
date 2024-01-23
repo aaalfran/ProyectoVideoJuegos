@@ -1,0 +1,88 @@
+[gd_scene load_steps=13 format=3 uid="uid://b5brafopn6cv5"]
+
+[ext_resource type="Script" path="res://scripts/shuriken.gd" id="1_l03kv"]
+[ext_resource type="Texture2D" uid="uid://cgphbm57056k1" path="res://assets/Tilesets/Objects/Suriken.png" id="2_bjiot"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qb7gu"]
+atlas = ExtResource("2_bjiot")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_50gr1"]
+atlas = ExtResource("2_bjiot")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pqe5j"]
+atlas = ExtResource("2_bjiot")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nl35c"]
+atlas = ExtResource("2_bjiot")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nnhvq"]
+atlas = ExtResource("2_bjiot")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uof30"]
+atlas = ExtResource("2_bjiot")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2tu5e"]
+atlas = ExtResource("2_bjiot")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ocbjv"]
+atlas = ExtResource("2_bjiot")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_l8p5c"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qb7gu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_50gr1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pqe5j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nl35c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nnhvq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uof30")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2tu5e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ocbjv")
+}],
+"loop": true,
+"name": &"movderecha",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_c6vw0"]
+radius = 22.0
+height = 50.0
+
+[node name="shuriken" type="CharacterBody2D"]
+slide_on_ceiling = false
+script = ExtResource("1_l03kv")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(72, 44.75)
+scale = Vector2(1.53846, 1.5)
+sprite_frames = SubResource("SpriteFrames_l8p5c")
+animation = &"movderecha"
+autoplay = "movderecha"
+frame_progress = 0.952579
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(72, 46)
+shape = SubResource("CapsuleShape2D_c6vw0")

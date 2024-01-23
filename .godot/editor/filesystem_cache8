@@ -18,7 +18,7 @@ Gh.png::CompressedTexture2D::6850731078187517925::1705978226::1705978226::1::::<
 personaje.png::CompressedTexture2D::2808398114144389508::1705978226::1705978226::1::::<><>::
 playeridle.png::CompressedTexture2D::8899625692136400583::1705978226::1705978226::1::::<><>::
 WhatsApp Image 2024-01-07 at 22.12.35_afcf9a05.jpg::CompressedTexture2D::5797461497315055292::1705978226::1705978226::1::::<><>::
-::res://assets/Tilesets/Objects/::1706024862
+::res://assets/Tilesets/Objects/::1706031751
 Basketball and hoop.png::CompressedTexture2D::348492236684436545::1705978226::1705978226::1::::<><>::
 breakersSet.png::CompressedTexture2D::5774637738958332158::1705978226::1705978226::1::::<><>::
 camera.jpg::CompressedTexture2D::7759200478323817076::1705978226::1705978226::1::::<><>::
@@ -35,6 +35,7 @@ Push_Trap_Front.png::CompressedTexture2D::1656044684336495539::1705978226::17059
 Push_Trap_Right.png::CompressedTexture2D::6186945579052734310::1705978226::1705978226::1::::<><>::
 SlashThunder.png::CompressedTexture2D::2401843084474211336::1705978226::1705978226::1::::<><>::
 Spike Trap.png::CompressedTexture2D::6906002604081838194::1705978226::1705978226::1::::<><>::
+Suriken.png::CompressedTexture2D::5225367578381454698::1631679919::1706031751::1::::<><>::
 Torch.png::CompressedTexture2D::5353565158645916176::1705978226::1705978226::1::::<><>::
 visualcone2.png::CompressedTexture2D::13333361068060461::1705978226::1705978226::1::::<><>::
 visualcone.png::CompressedTexture2D::7168809615540383338::1705978226::1705978226::1::::<><>::
@@ -50,27 +51,30 @@ Terrain (16x16).png::CompressedTexture2D::2054941265821068765::1705978226::17059
 TileSet_Dunegonjual.png::CompressedTexture2D::7778223844365666237::1705978226::1705978226::1::::<><>::
 wall_bricks.png::CompressedTexture2D::1008188279014957867::1705978226::1705978226::1::::<><>::
 wall_cobblestone_64px.png::CompressedTexture2D::5757385135451426271::1705978226::1705978226::1::::<><>::
-::res://Escenas/::1705978226
+::res://Escenas/::1706031333
 Area2D.gd::GDScript::-1::1705978225::0::1::::<>Area2D<>::
-BlockArea.gd::GDScript::-1::1705978225::0::1::::<>Area2D<>::
-CellBlock.tscn::PackedScene::4654058360195108290::1705978226::0::1::::<><>::uid://81h8tudlyxjc
+BlockArea.gd::GDScript::-1::1706025991::0::1::::<>Area2D<>::
+CellBlock.tscn::PackedScene::4654058360195108290::1706031333::0::1::::<><>::uid://81h8tudlyxjc::::res://personajes/personajePrincipal.tscn<>uid://ommyi8t3vid4::::res://assets/Tilesets/Terrains/wall_bricks.png<>uid://bbi6hndfseigt::::res://assets/Tilesets/Objects/prison_tile.png<>uid://ch85463cin7fs::::res://bumper.tscn<>uid://coa6j6toaqc0f::::res://assets/Tilesets/Terrains/wall_cobblestone_64px.png<>uid://bh8ykaygbg4st::::res://assets/Tilesets/Objects/comedor.png<>uid://dtwfwxjin0kvp::::res://assets/Tilesets/Terrains/Prison_C.png<>uid://di23hfd11l3kb::::res://assets/Tilesets/Terrains/TileSet_Dunegonjual.png<>uid://bfkcdb5iv6jmg::::res://assets/Tilesets/Objects/Prison_D.png<>uid://c65ir65ahdnu4::::res://assets/Tilesets/Terrains/Prison_B.png<>uid://bahqafoiigff1::::res://assets/Tilesets/Objects/SlashThunder.png<>uid://eff2syglvgei::::res://assets/Tilesets/Objects/patioassets.png<>uid://dy2bsglvk5nxv::::res://assets/Tilesets/Characters/playeridle.png<>uid://21k18x0jlux0::::res://assets/Tilesets/Characters/$Prisoner-M-31.png<>uid://cv6bi5sdq5jjn::::res://assets/Tilesets/Terrains/Prison_A5.png<>uid://4jot2jllmlwv::::res://assets/Tilesets/Terrains/Terrain (16x16).png<>uid://cijko3ao2plo7::::res://assets/Tilesets/Objects/Torch.png<>res://scripts/AnimatedSprite2D.gd<>uid://dxwnscspx0yls::::res://personajes/policiabasico.tscn<>uid://c5nk4becfv5ni::::res://assets/Tilesets/Objects/Spike Trap.png<>uid://cmdtqogjbrri8::::res://assets/Tilesets/Objects/Fire_Trap.png<>res://scripts/trampas.gd<>uid://bh11xvvhpnhgt::::res://Objects/Camera.tscn<>uid://b6pcnn3gnc6v::::res://Objects/llave.tscn<>res://Escenas/BlockArea.gd
 Patio.tscn::PackedScene::2951796704962461712::1705978226::0::1::::<><>::uid://cpnjysx24qvoa
 PrisionCell.tscn::PackedScene::7963620369955885777::1705978226::0::1::::<><>::uid://81h8tudlyxjc
 tile_screen.tscn::PackedScene::4087269368922697357::1705978226::0::1::::<><>::uid://5ldsrtojcgev
-::res://Objects/::1705978226
+::res://Objects/::1706025401
 BreakerBox.tscn::PackedScene::162044710995586640::1705978226::0::1::::<><>::uid://cojjo7q4qmof3
 Camera.gd::GDScript::-1::1705978226::0::1::::<>Node2D<>::
 Camera.tscn::PackedScene::2933037261606480627::1705978226::0::1::::<><>::uid://disu5smuu8m5a
+llave.tscn::PackedScene::135099584659925699::1706025401::0::1::::<><>::res://scripts/Llave.gd<>uid://clsxve6xvdynd::::res://assets/Tilesets/Objects/key_big.png
 ::res://personajes/::1705978226
 personajePrincipal.gd::GDScript::-1::1705978226::0::1::::<>CharacterBody2D<>::
 personajePrincipal.tscn::PackedScene::2370390640800566880::1705978226::0::1::::<><>::res://personajes/personajePrincipal.gd<>uid://bgan53cdpftq7
 policiabasico.tscn::PackedScene::8819843364106072832::1705978226::0::1::::<><>::res://scripts/policiabasico.gd<>uid://c4ussmglggvt2
-::res://scripts/::1705978226
+shuriken.tscn::PackedScene::4495182844409299992::1706031863::0::1::::<><>::res://scripts/policiabasico.gd<>uid://c4ussmglggvt2::::res://assets/Tilesets/Characters/Gh.png<>uid://daevinr08hq1o::::res://assets/Tilesets/Objects/visualcone.png<>res://scripts/ConoArea.gd
+::res://scripts/::1706025401
 AnimatedSprite2D.gd::GDScript::-1::1705978226::0::1::::<>AnimatedSprite2D<>::
 Area2DBB2.gd::GDScript::-1::1705978226::0::1::::<>Area2D<>::
 Area2DBB.gd::GDScript::-1::1705978226::0::1::::<>Area2D<>::
 Camera.gd::GDScript::-1::1705978226::0::1::::<>Node2D<>::
 ConoArea.gd::GDScript::-1::1705978226::0::1::::<>Area2D<>::
+Llave.gd::GDScript::-1::1706025401::0::1::::<>Area2D<>::
 phone.gd::GDScript::-1::1705978226::0::1::::<>AnimatedSprite2D<>::
 policiabasico.gd::GDScript::-1::1705978226::0::1::::<>CharacterBody2D<>::
 spike.gd::GDScript::-1::1705978226::0::1::::<>AnimatedSprite2D<>::
