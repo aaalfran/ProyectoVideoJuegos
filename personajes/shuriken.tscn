@@ -1,7 +1,8 @@
-[gd_scene load_steps=13 format=3 uid="uid://b5brafopn6cv5"]
+[gd_scene load_steps=15 format=3 uid="uid://b5brafopn6cv5"]
 
 [ext_resource type="Script" path="res://scripts/shuriken.gd" id="1_l03kv"]
 [ext_resource type="Texture2D" uid="uid://cgphbm57056k1" path="res://assets/Tilesets/Objects/Suriken.png" id="2_bjiot"]
+[ext_resource type="Script" path="res://scripts/trampas.gd" id="3_7dhl8"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qb7gu"]
 atlas = ExtResource("2_bjiot")
@@ -68,8 +69,11 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_c6vw0"]
-radius = 22.0
-height = 50.0
+radius = 9.0
+height = 24.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mstnk"]
+radius = 25.02
 
 [node name="shuriken" type="CharacterBody2D"]
 slide_on_ceiling = false
@@ -84,5 +88,17 @@ autoplay = "movderecha"
 frame_progress = 0.952579
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(72, 46)
+position = Vector2(71, 44)
 shape = SubResource("CapsuleShape2D_c6vw0")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="Area2D" type="Area2D" parent="Sprite2D"]
+position = Vector2(-7, 22)
+script = ExtResource("3_7dhl8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D"]
+position = Vector2(79, 23)
+shape = SubResource("CircleShape2D_mstnk")
+
+[connection signal="body_entered" from="Sprite2D/Area2D" to="Sprite2D/Area2D" method="_on_body_entered"]
