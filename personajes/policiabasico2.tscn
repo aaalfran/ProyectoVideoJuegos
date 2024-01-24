@@ -1,0 +1,94 @@
+[gd_scene load_steps=13 format=3 uid="uid://cpx86yxbdvi10"]
+
+[ext_resource type="Script" path="res://scripts/policiabasico2.gd" id="1_ox4pp"]
+[ext_resource type="Texture2D" uid="uid://ba08a446mmyfe" path="res://assets/Tilesets/Characters/policeSprite.png" id="2_ta7qj"]
+[ext_resource type="Texture2D" uid="uid://daevinr08hq1o" path="res://assets/Tilesets/Objects/visualcone.png" id="3_tid8r"]
+[ext_resource type="Script" path="res://scripts/VisualCone2.gd" id="4_r3esy"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2t61m"]
+atlas = ExtResource("2_ta7qj")
+region = Rect2(52, 216, 52, 72)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hs0wl"]
+atlas = ExtResource("2_ta7qj")
+region = Rect2(0, 216, 52, 72)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o5yg7"]
+atlas = ExtResource("2_ta7qj")
+region = Rect2(104, 216, 52, 72)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_is82h"]
+atlas = ExtResource("2_ta7qj")
+region = Rect2(52, 0, 52, 72)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1i45m"]
+atlas = ExtResource("2_ta7qj")
+region = Rect2(0, 0, 52, 72)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n0xwy"]
+atlas = ExtResource("2_ta7qj")
+region = Rect2(104, 0, 52, 72)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_23eja"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2t61m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hs0wl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o5yg7")
+}],
+"loop": true,
+"name": &"mov arriba",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_is82h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1i45m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n0xwy")
+}],
+"loop": true,
+"name": &"mov_abajo",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_fmh5f"]
+radius = 24.0
+height = 90.0
+
+[node name="policiabasico2" type="CharacterBody2D"]
+script = ExtResource("1_ox4pp")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(72, 44.75)
+scale = Vector2(1.538, 1.5)
+sprite_frames = SubResource("SpriteFrames_23eja")
+animation = &"mov_abajo"
+autoplay = "mov_abajo"
+frame_progress = 0.563356
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(70, 55)
+shape = SubResource("CapsuleShape2D_fmh5f")
+
+[node name="VisualCone2" type="Sprite2D" parent="."]
+position = Vector2(73, 176)
+rotation = 1.5708
+scale = Vector2(1, 1.007)
+texture = ExtResource("3_tid8r")
+
+[node name="Area2D" type="Area2D" parent="VisualCone2"]
+script = ExtResource("4_r3esy")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="VisualCone2/Area2D"]
+polygon = PackedVector2Array(110, 74.4786, 129, 30.7845, 131, -27.8054, 115, -70.5065, -116, 2.97916)
+
+[connection signal="body_entered" from="VisualCone2/Area2D" to="VisualCone2/Area2D" method="_on_body_entered"]

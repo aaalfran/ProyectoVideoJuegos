@@ -1,7 +1,9 @@
-res://scripts/Llave.gd
 res://Escenas/CellBlock.tscn
-res://Escenas/BlockArea.gd
-res://Escenas/fakeroom.tscn
-res://personajes/shuriken.tscn
+res://personajes/policiabasico2.tscn
+res://scripts/policiabasico2.gd
+res://Escenas/PrisionCell.tscn
+res://personajes/policiabasico.tscn
 res://scripts/policiabasico.gd
-res://scripts/shuriken.gd
+res://scripts/VisualCone2.gd
+res://Escenas/Patio.tscn
+res://bumper.tscn

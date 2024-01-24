@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://bib4wpra7froi"]
+[gd_scene load_steps=31 format=3 uid="uid://bib4wpra7froi"]
 
 [ext_resource type="Texture2D" uid="uid://cpnjysx24qvoa" path="res://assets/Tilesets/Terrains/PrisonPatio.png" id="1_4b7l3"]
 [ext_resource type="PackedScene" uid="uid://81h8tudlyxjc" path="res://personajes/personajePrincipal.tscn" id="2_3siev"]
@@ -15,6 +15,7 @@
 [ext_resource type="Script" path="res://scripts/Camera.gd" id="12_napy1"]
 [ext_resource type="Script" path="res://scripts/Area2DBB.gd" id="12_o6hqs"]
 [ext_resource type="Script" path="res://scripts/Area2DBB2.gd" id="14_bca15"]
+[ext_resource type="PackedScene" uid="uid://cpx86yxbdvi10" path="res://personajes/policiabasico2.tscn" id="16_6oau2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wr43m"]
 texture = ExtResource("1_4b7l3")
@@ -24183,6 +24184,23 @@ script = ExtResource("14_bca15")
 [node name="CollisionShape2DBB2" type="CollisionShape2D" parent="BreakerBox2/Area2DBB2"]
 position = Vector2(0.5, 21.5)
 shape = SubResource("RectangleShape2D_5tiht")
+
+[node name="policiabasico5" parent="." instance=ExtResource("16_6oau2")]
+position = Vector2(896, 238)
+collision_layer = 3
+collision_mask = 3
+
+[node name="bumper9" parent="." instance=ExtResource("5_6ha22")]
+position = Vector2(991, 951)
+rotation = 1.5708
+collision_layer = 2
+collision_mask = 2
+
+[node name="bumper10" parent="." instance=ExtResource("5_6ha22")]
+position = Vector2(991, 238)
+rotation = 1.5708
+collision_layer = 2
+collision_mask = 2
 
 [connection signal="body_entered" from="BreakerBox/Area2DBB" to="BreakerBox/Area2DBB" method="_on_body_entered"]
 [connection signal="body_exited" from="BreakerBox/Area2DBB" to="BreakerBox/Area2DBB" method="_on_body_exited"]
