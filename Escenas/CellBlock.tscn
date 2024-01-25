@@ -1,4 +1,4 @@
-[gd_scene load_steps=93 format=3 uid="uid://b7kpwqm3cvufa"]
+[gd_scene load_steps=97 format=3 uid="uid://b7kpwqm3cvufa"]
 
 [ext_resource type="PackedScene" uid="uid://81h8tudlyxjc" path="res://personajes/personajePrincipal.tscn" id="1_ijm8y"]
 [ext_resource type="Texture2D" uid="uid://ommyi8t3vid4" path="res://assets/Tilesets/Terrains/wall_bricks.png" id="2_m1ysp"]
@@ -26,6 +26,9 @@
 [ext_resource type="PackedScene" uid="uid://b6pcnn3gnc6v" path="res://Objects/llave.tscn" id="24_0u7uk"]
 [ext_resource type="Script" path="res://Escenas/BlockArea.gd" id="24_hpith"]
 [ext_resource type="PackedScene" uid="uid://b5brafopn6cv5" path="res://personajes/shuriken.tscn" id="24_m3oc3"]
+[ext_resource type="Script" path="res://scripts/CameraOficina.gd" id="27_0cqv8"]
+[ext_resource type="PackedScene" uid="uid://ckq380d3x1vg" path="res://Objects/BreakerBox.tscn" id="28_q2lnn"]
+[ext_resource type="Script" path="res://scripts/Area2DOficina.gd" id="29_pfiaj"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_isnxl"]
 texture = ExtResource("2_m1ysp")
@@ -60917,6 +60920,9 @@ sources/0 = SubResource("TileSetAtlasSource_2dwmt")
 sources/3 = SubResource("TileSetAtlasSource_e21p7")
 sources/2 = SubResource("TileSetAtlasSource_6w78a")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_05d6l"]
+size = Vector2(60.4718, 86.7835)
+
 [node name="CellBlock" type="Node2D"]
 position = Vector2(3495, 4165)
 scale = Vector2(1.07488, 1.05491)
@@ -61188,9 +61194,6 @@ scale = Vector2(1.66752, 1.37579)
 sprite_frames = SubResource("SpriteFrames_tu7ch")
 autoplay = "default"
 
-[node name="Camera" parent="TileMap_Block" instance=ExtResource("23_qg3rr")]
-position = Vector2(1174.8, -641.39)
-
 [node name="shuriken" parent="TileMap_Block" instance=ExtResource("24_m3oc3")]
 position = Vector2(-1142.49, 308.313)
 
@@ -61218,7 +61221,25 @@ metadata/_edit_lock_ = true
 position = Vector2(-1790.91, -4486.62)
 scale = Vector2(1.01437, 0.4846)
 
+[node name="CameraOficina" parent="." instance=ExtResource("23_qg3rr")]
+position = Vector2(-2049.54, -4588.05)
+scale = Vector2(0.992052, 1.02909)
+script = ExtResource("27_0cqv8")
+
+[node name="BreakerBoxOficina" parent="." instance=ExtResource("28_q2lnn")]
+position = Vector2(-495.869, -2755.69)
+
+[node name="Area2DOficina" type="Area2D" parent="BreakerBoxOficina"]
+script = ExtResource("29_pfiaj")
+
+[node name="CollisionShape2DOficina" type="CollisionShape2D" parent="BreakerBoxOficina/Area2DOficina"]
+position = Vector2(1.39526, 19.1724)
+shape = SubResource("RectangleShape2D_05d6l")
+
 [connection signal="body_entered" from="TileMap_Block/Area2D" to="TileMap_Block/Area2D" method="_on_body_entered"]
 [connection signal="body_entered" from="TileMap_Block/trampas" to="TileMap_Block/trampas" method="_on_body_entered"]
 [connection signal="body_entered" from="CambioNivel/Area2D" to="CambioNivel/Area2D" method="_on_body_entered"]
 [connection signal="puerta_llave" from="Llave" to="CambioNivel/Area2D" method="_on_llave_puerta_llave"]
+[connection signal="OfficeCameraOff" from="BreakerBoxOficina/Area2DOficina" to="CameraOficina" method="_on_area_2d_oficina_office_camera_off"]
+[connection signal="body_entered" from="BreakerBoxOficina/Area2DOficina" to="BreakerBoxOficina/Area2DOficina" method="_on_body_entered"]
+[connection signal="body_exited" from="BreakerBoxOficina/Area2DOficina" to="BreakerBoxOficina/Area2DOficina" method="_on_body_exited"]
