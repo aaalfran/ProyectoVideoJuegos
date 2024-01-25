@@ -1,4 +1,4 @@
-[gd_scene load_steps=97 format=3 uid="uid://b7kpwqm3cvufa"]
+[gd_scene load_steps=98 format=3 uid="uid://b7kpwqm3cvufa"]
 
 [ext_resource type="PackedScene" uid="uid://81h8tudlyxjc" path="res://personajes/personajePrincipal.tscn" id="1_ijm8y"]
 [ext_resource type="Texture2D" uid="uid://ommyi8t3vid4" path="res://assets/Tilesets/Terrains/wall_bricks.png" id="2_m1ysp"]
@@ -29,6 +29,7 @@
 [ext_resource type="Script" path="res://scripts/CameraOficina.gd" id="27_0cqv8"]
 [ext_resource type="PackedScene" uid="uid://ckq380d3x1vg" path="res://Objects/BreakerBox.tscn" id="28_q2lnn"]
 [ext_resource type="Script" path="res://scripts/Area2DOficina.gd" id="29_pfiaj"]
+[ext_resource type="Texture2D" uid="uid://b7bfxpk5nsnii" path="res://assets/Tilesets/Objects/ventilador.png" id="30_y32lr"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_isnxl"]
 texture = ExtResource("2_m1ysp")
@@ -61235,6 +61236,11 @@ script = ExtResource("29_pfiaj")
 [node name="CollisionShape2DOficina" type="CollisionShape2D" parent="BreakerBoxOficina/Area2DOficina"]
 position = Vector2(1.39526, 19.1724)
 shape = SubResource("RectangleShape2D_05d6l")
+
+[node name="Ventilador" type="Sprite2D" parent="."]
+position = Vector2(-1121.99, -4453.46)
+scale = Vector2(0.161495, 0.163921)
+texture = ExtResource("30_y32lr")
 
 [connection signal="body_entered" from="TileMap_Block/Area2D" to="TileMap_Block/Area2D" method="_on_body_entered"]
 [connection signal="body_entered" from="TileMap_Block/trampas" to="TileMap_Block/trampas" method="_on_body_entered"]
