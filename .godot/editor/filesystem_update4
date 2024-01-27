@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 res://Objects/light.tscn
 res://Escenas/Patio.tscn
 res://scripts/LightCollision.gd
@@ -23,3 +24,16 @@ res://scripts/Area2DBreakerSpotlight4.gd
 res://scripts/SpotlightOn4.gd
 res://scripts/EnterTower4.gd
 res://scripts/ExitTower4.gd
+=======
+res://Escenas/CellBlock.tscn
+res://personajes/policiabasico2.tscn
+res://personajes/policiabasico.tscn
+res://Escenas/PrisionCell.tscn
+res://Escenas/Patio.tscn
+res://bumper.tscn
+res://personajes/shuriken.tscn
+res://scripts/shuriken.gd
+res://scripts/breakerseguridad.gd
+res://Objects/camarSeguridad.gd
+res://scripts/breakertrampa.gd
+>>>>>>> c7f8a61a9fa8f982475f15f9f727f30c78bb2451
