@@ -89,6 +89,6 @@ texture = ExtResource("3_tid8r")
 script = ExtResource("4_r3esy")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="VisualCone2/Area2D"]
-polygon = PackedVector2Array(110, 74.4786, 129, 30.7845, 131, -27.8054, 115, -70.5065, -116, 2.97916)
+polygon = PackedVector2Array(99.0002, 47.666, 109, 20.8536, 109, -22.8405, 96.9998, -48.6597, -116, 2.97916)
 
 [connection signal="body_entered" from="VisualCone2/Area2D" to="VisualCone2/Area2D" method="_on_body_entered"]
