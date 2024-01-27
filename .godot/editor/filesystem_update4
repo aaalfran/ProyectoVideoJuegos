@@ -1,8 +1,11 @@
-res://personajes/shuriken.tscn
 res://Escenas/CellBlock.tscn
 res://personajes/policiabasico2.tscn
 res://personajes/policiabasico.tscn
 res://Escenas/PrisionCell.tscn
 res://Escenas/Patio.tscn
 res://bumper.tscn
-res://scripts/trampas.gd
+res://personajes/shuriken.tscn
+res://scripts/shuriken.gd
+res://scripts/breakerseguridad.gd
+res://Objects/camarSeguridad.gd
+res://scripts/breakertrampa.gd
