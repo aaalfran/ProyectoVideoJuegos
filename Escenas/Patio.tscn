@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=3 uid="uid://bib4wpra7froi"]
+[gd_scene load_steps=34 format=3 uid="uid://bib4wpra7froi"]
 
 [ext_resource type="Texture2D" uid="uid://cpnjysx24qvoa" path="res://assets/Tilesets/Terrains/PrisonPatio.png" id="1_4b7l3"]
 [ext_resource type="PackedScene" uid="uid://81h8tudlyxjc" path="res://personajes/personajePrincipal.tscn" id="2_3siev"]
@@ -16,6 +16,9 @@
 [ext_resource type="Script" path="res://scripts/Area2DBB.gd" id="12_o6hqs"]
 [ext_resource type="Script" path="res://scripts/Area2DBB2.gd" id="14_bca15"]
 [ext_resource type="PackedScene" uid="uid://cpx86yxbdvi10" path="res://personajes/policiabasico2.tscn" id="16_6oau2"]
+[ext_resource type="Texture2D" path="res://assets/Tilesets/Objects/spotlight_On.png" id="17_dpr81"]
+[ext_resource type="PackedScene" path="res://Objects/light.tscn" id="18_w7lji"]
+[ext_resource type="PackedScene" path="res://bumperBox.tscn" id="19_e3uhp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wr43m"]
 texture = ExtResource("1_4b7l3")
@@ -24201,6 +24204,82 @@ position = Vector2(991, 238)
 rotation = 1.5708
 collision_layer = 2
 collision_mask = 2
+
+[node name="SpotlightOn" type="Sprite2D" parent="."]
+z_index = 5
+position = Vector2(226, 125)
+rotation = -0.0226893
+scale = Vector2(0.29623, 0.273972)
+texture = ExtResource("17_dpr81")
+flip_h = true
+
+[node name="Light" parent="." instance=ExtResource("18_w7lji")]
+position = Vector2(272, 454)
+scale = Vector2(0.416813, 0.39625)
+collision_layer = 8
+collision_mask = 8
+
+[node name="bumperBOX1" parent="." instance=ExtResource("19_e3uhp")]
+position = Vector2(-96, 145)
+collision_layer = 8
+collision_mask = 8
+
+[node name="SpotlightOn2" type="Sprite2D" parent="."]
+z_index = 5
+position = Vector2(1734, 145)
+rotation = -0.0226893
+scale = Vector2(0.29623, 0.273972)
+texture = ExtResource("17_dpr81")
+
+[node name="Light2" parent="." instance=ExtResource("18_w7lji")]
+position = Vector2(1246, 454)
+scale = Vector2(0.416813, 0.39625)
+collision_layer = 8
+collision_mask = 8
+
+[node name="bumperBOX2" parent="." instance=ExtResource("19_e3uhp")]
+position = Vector2(-96, 603)
+collision_layer = 8
+collision_mask = 8
+
+[node name="SpotlightOn3" type="Sprite2D" parent="."]
+z_index = 5
+position = Vector2(222, 902)
+rotation = -0.0226893
+scale = Vector2(0.29623, 0.273972)
+texture = ExtResource("17_dpr81")
+flip_h = true
+flip_v = true
+
+[node name="Light3" parent="." instance=ExtResource("18_w7lji")]
+position = Vector2(688, 724)
+scale = Vector2(0.416813, 0.39625)
+collision_layer = 8
+collision_mask = 8
+
+[node name="bumperBOX3" parent="." instance=ExtResource("19_e3uhp")]
+position = Vector2(896, 145)
+collision_layer = 8
+collision_mask = 8
+
+[node name="SpotlightOn4" type="Sprite2D" parent="."]
+z_index = 5
+position = Vector2(1739, 906)
+rotation = -0.0226893
+scale = Vector2(0.29623, 0.273972)
+texture = ExtResource("17_dpr81")
+flip_v = true
+
+[node name="Light4" parent="." instance=ExtResource("18_w7lji")]
+position = Vector2(1680, 704)
+scale = Vector2(0.416813, 0.39625)
+collision_layer = 8
+collision_mask = 8
+
+[node name="bumperBOX4" parent="." instance=ExtResource("19_e3uhp")]
+position = Vector2(896, 603)
+collision_layer = 8
+collision_mask = 8
 
 [connection signal="body_entered" from="BreakerBox/Area2DBB" to="BreakerBox/Area2DBB" method="_on_body_entered"]
 [connection signal="body_exited" from="BreakerBox/Area2DBB" to="BreakerBox/Area2DBB" method="_on_body_exited"]

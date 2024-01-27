@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=3 uid="uid://yvac1pxtschy"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_paw7v"]
+a = Vector2(681, 8)
+b = Vector2(-8, 9)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_khray"]
+a = Vector2(-4, 464)
+b = Vector2(-6, -9)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_hue4o"]
+a = Vector2(0, 399)
+b = Vector2(1, -50)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_alkob"]
+a = Vector2(683, 285)
+b = Vector2(-3, 287)
+
+[node name="bumperBOX" type="StaticBody2D"]
+position = Vector2(-2, -1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(266, 25)
+shape = SubResource("SegmentShape2D_paw7v")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(266, 25)
+shape = SubResource("SegmentShape2D_khray")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="."]
+position = Vector2(950, 83)
+shape = SubResource("SegmentShape2D_hue4o")
+one_way_collision = true
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="."]
+position = Vector2(266, 201)
+shape = SubResource("SegmentShape2D_alkob")

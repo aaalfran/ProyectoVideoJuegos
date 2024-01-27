@@ -1,12 +1,16 @@
 CollisionShape2D
+<<<<<<< HEAD
 Area2D
 Label
 Node2D
 Node
+=======
+>>>>>>> 0ba1323a1f04537d902ad111975cb415c0538d1b
 Sprite2D
-CollisionPolygon2D
 AnimatedSprite2D
 CharacterBody2D
+Area2D
+CollisionPolygon2D
 TileMap
 TextureRect
 Button
