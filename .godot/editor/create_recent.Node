@@ -1,9 +1,10 @@
+Control
+Label
 CanvasLayer
 Button
 HBoxContainer
 VBoxContainer
 TextureRect
-Label
 Panel
 ColorRect
 CollisionShape2D
@@ -15,6 +16,5 @@ Sprite2D
 AnimatedSprite2D
 CharacterBody2D
 CollisionPolygon2D
-Control
 PanelContainer
 StaticBody2D

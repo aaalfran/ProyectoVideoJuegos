@@ -1,10 +1,11 @@
-[gd_scene load_steps=13 format=3 uid="uid://dlpvwttuwhf0t"]
+[gd_scene load_steps=14 format=3 uid="uid://dlpvwttuwhf0t"]
 
 [ext_resource type="PackedScene" uid="uid://81h8tudlyxjc" path="res://personajes/personajePrincipal.tscn" id="1_hvnfr"]
 [ext_resource type="Texture2D" uid="uid://ommyi8t3vid4" path="res://assets/Tilesets/Terrains/wall_bricks.png" id="2_rdnps"]
 [ext_resource type="Texture2D" uid="uid://bbi6hndfseigt" path="res://assets/Tilesets/Objects/prison_tile.png" id="3_mn1ny"]
 [ext_resource type="Texture2D" uid="uid://coa6j6toaqc0f" path="res://assets/Tilesets/Terrains/wall_cobblestone_64px.png" id="4_03eu2"]
 [ext_resource type="Script" path="res://Escenas/Area2D.gd" id="5_d7qoe"]
+[ext_resource type="PackedScene" uid="uid://b6pcnn3gnc6v" path="res://Objects/llave.tscn" id="6_731dx"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ljywl"]
 texture = ExtResource("2_rdnps")
@@ -9401,4 +9402,8 @@ position = Vector2(16.75, -8.75)
 shape = SubResource("RectangleShape2D_utxr7")
 metadata/_edit_lock_ = true
 
+[node name="Llave" parent="." instance=ExtResource("6_731dx")]
+position = Vector2(186, 139)
+
 [connection signal="body_entered" from="StaticBody2D/Area2D" to="StaticBody2D/Area2D" method="_on_body_entered"]
+[connection signal="puerta_llave" from="Llave" to="StaticBody2D/Area2D" method="_on_llave_puerta_llave"]

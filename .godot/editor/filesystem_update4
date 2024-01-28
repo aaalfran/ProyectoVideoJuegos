@@ -1,12 +1,11 @@
+res://Escenas/Area2D.gd
 res://Escenas/PrisionCell.tscn
-res://Escenas/Patio.tscn
 res://Escenas/CellBlock.tscn
 res://Escenas/game_over_screen.tscn
 res://Escenas/tile_screen.tscn
 res://personajes/personajePrincipal.tscn
-res://MainGame.tscn
-res://Escenas/Area2D.gd
 res://Objects/BreakerBox.tscn
 res://bumper.tscn
 res://bumperBox.tscn
 res://MainMenu.tscn
+res://MainGame.tscn

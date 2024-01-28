@@ -1,0 +1,14 @@
+[gd_resource type="AudioBusLayout" load_steps=3 format=3 uid="uid://dxf7pbdyywg7x"]
+
+[sub_resource type="AudioEffectNotchFilter" id="AudioEffectNotchFilter_mheaw"]
+resource_name = "NotchFilter"
+
+[sub_resource type="AudioEffectPitchShift" id="AudioEffectPitchShift_f2tev"]
+resource_name = "PitchShift"
+
+[resource]
+bus/0/solo = true
+bus/0/effect/0/effect = SubResource("AudioEffectNotchFilter_mheaw")
+bus/0/effect/0/enabled = false
+bus/0/effect/1/effect = SubResource("AudioEffectPitchShift_f2tev")
+bus/0/effect/1/enabled = false
