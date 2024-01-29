@@ -74,3 +74,8 @@ func _on_enter_tower_4_enter_tower_4():
 func _on_exit_tower_4_leave_tower_4():
 	self.position.x = 1860
 	self.position.y = 1140
+
+
+func _on_area_2d_brown_door_salida_completa():
+	self.position.x = 960
+	self.position.y = 1300
