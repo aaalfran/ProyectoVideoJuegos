@@ -1,5 +1,7 @@
-Control
+CollisionShape2D
+Area2D
 Label
+Control
 CanvasLayer
 Button
 HBoxContainer
@@ -7,8 +9,6 @@ VBoxContainer
 TextureRect
 Panel
 ColorRect
-CollisionShape2D
-Area2D
 TileMap
 Node2D
 Node
