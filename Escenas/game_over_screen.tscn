@@ -1,12 +1,13 @@
-[gd_scene load_steps=6 format=3 uid="uid://4olyfsqudrll"]
+[gd_scene load_steps=7 format=3 uid="uid://4olyfsqudrll"]
 
+[ext_resource type="FontFile" uid="uid://dkkc688jfqdgj" path="res://font/tinypixel.otf" id="1_i5b57"]
 [ext_resource type="Texture2D" uid="uid://dnhleaknr2cvc" path="res://assets/Tilesets/Objects/skull_head.png" id="1_t5x3v"]
 
 [sub_resource type="GDScript" id="GDScript_p7tud"]
 script/source = "extends Control
 
 func _on_retry_button_pressed():
-	get_tree().reload_current_scene()
+	get_tree().change_scene_to_file(\"res://Escenas/PrisionCell.tscn\")
 
 func _on_salir_pressed():
 	get_tree().quit()
@@ -35,6 +36,7 @@ font_size = 45
 
 [sub_resource type="LabelSettings" id="LabelSettings_lnqye"]
 font_size = 25
+font_color = Color(1, 0, 0, 1)
 
 [node name="GameOverScreen" type="Control"]
 layout_mode = 3
@@ -87,6 +89,8 @@ alignment = 1
 
 [node name="GameOver" type="Label" parent="Panel/VBoxContainer"]
 layout_mode = 2
+theme_override_colors/font_color = Color(0.694118, 0.568627, 0.270588, 1)
+theme_override_fonts/font = ExtResource("1_i5b57")
 text = "Game Over"
 label_settings = SubResource("LabelSettings_lpwet")
 
@@ -97,6 +101,7 @@ alignment = 1
 
 [node name="descriptionMessage" type="Label" parent="Panel/VBoxContainer/HBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("1_i5b57")
 text = "Te moriste"
 label_settings = SubResource("LabelSettings_lnqye")
 horizontal_alignment = 1
@@ -108,10 +113,12 @@ texture = ExtResource("1_t5x3v")
 
 [node name="retryButton" type="Button" parent="Panel/VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("1_i5b57")
 text = "Intentar de nuevo"
 
 [node name="salir" type="Button" parent="Panel/VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("1_i5b57")
 text = "Salir"
 
 [connection signal="pressed" from="Panel/VBoxContainer/retryButton" to="." method="_on_retry_button_pressed"]

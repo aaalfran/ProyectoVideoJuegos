@@ -1,7 +1,15 @@
-res://Escenas/BlockArea.gd
+res://scripts/mensaje.gd
 res://Escenas/CellBlock.tscn
 res://Objects/llave.tscn
 res://Objects/label.tscn
 res://Escenas/PrisionCell.tscn
 res://personajes/policiabasico.tscn
 res://Objects/Camera.tscn
+res://scripts/inicio.gd
+res://Escenas/tile_screen.tscn
+res://Escenas/game_over_screen.tscn
+res://scripts/trampas.gd
+res://Escenas/atrapado_screen.tscn
+res://scripts/ConoArea.gd
+res://scripts/VisualCone2.gd
+res://personajes/policiabasico2.tscn

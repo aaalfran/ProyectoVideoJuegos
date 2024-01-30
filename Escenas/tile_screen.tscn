@@ -1,6 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://byh5y2ek3gi3f"]
+[gd_scene load_steps=5 format=3 uid="uid://byh5y2ek3gi3f"]
 
 [ext_resource type="Texture2D" uid="uid://5ldsrtojcgev" path="res://assets/Tilesets/background/island.jpg" id="1_cdwr3"]
+[ext_resource type="FontFile" uid="uid://dkkc688jfqdgj" path="res://font/tinypixel.otf" id="2_oix6t"]
+[ext_resource type="Script" path="res://scripts/inicio.gd" id="3_43p4k"]
 
 [sub_resource type="GDScript" id="GDScript_kx8nu"]
 script/source = "extends Control
@@ -51,19 +53,24 @@ alignment = 1
 [node name="IslandBreak" type="Label" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("2_oix6t")
 theme_override_font_sizes/font_size = 60
 text = "IslandBreak"
 
 [node name="Jugar" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_constants/outline_size = 0
+theme_override_fonts/font = ExtResource("2_oix6t")
 theme_override_font_sizes/font_size = 25
 text = "Jugar"
+script = ExtResource("3_43p4k")
 
 [node name="Salir" type="Button" parent="VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_oix6t")
 theme_override_font_sizes/font_size = 25
 text = "Salir"
 
 [connection signal="pressed" from="VBoxContainer/Jugar" to="." method="_on_jugar_pressed"]
+[connection signal="pressed" from="VBoxContainer/Jugar" to="VBoxContainer/Jugar" method="_on_pressed"]
 [connection signal="pressed" from="VBoxContainer/Salir" to="." method="_on_salir_pressed"]
