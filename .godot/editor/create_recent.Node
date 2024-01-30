@@ -1,5 +1,7 @@
-CollisionShape2D
 Label
+Sprite2D
+TileMap
+CollisionShape2D
 Area2D
 Control
 CanvasLayer
@@ -9,10 +11,8 @@ VBoxContainer
 TextureRect
 Panel
 ColorRect
-TileMap
 Node2D
 Node
-Sprite2D
 AnimatedSprite2D
 CharacterBody2D
 CollisionPolygon2D

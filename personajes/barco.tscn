@@ -1,0 +1,69 @@
+[gd_scene load_steps=10 format=3 uid="uid://bsla45s6qime1"]
+
+[ext_resource type="Script" path="res://scripts/shuriken.gd" id="1_p5tgr"]
+[ext_resource type="Texture2D" uid="uid://brjnsgqrigxra" path="res://assets/Tilesets/Objects/barco.png" id="2_3hcgq"]
+[ext_resource type="Script" path="res://personajes/barco.gd" id="3_ijawp"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bd5g5"]
+atlas = ExtResource("2_3hcgq")
+region = Rect2(0, 0, 83, 73)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kcyyw"]
+atlas = ExtResource("2_3hcgq")
+region = Rect2(83, 0, 83, 73)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_plu7o"]
+atlas = ExtResource("2_3hcgq")
+region = Rect2(166, 0, 83, 73)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_l8p5c"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bd5g5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kcyyw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_plu7o")
+}],
+"loop": true,
+"name": &"movderecha",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_c6vw0"]
+radius = 9.0
+height = 24.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mstnk"]
+radius = 25.02
+
+[node name="shuriken" type="CharacterBody2D"]
+slide_on_ceiling = false
+script = ExtResource("1_p5tgr")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(72, 44.75)
+scale = Vector2(1.53846, 1.5)
+sprite_frames = SubResource("SpriteFrames_l8p5c")
+animation = &"movderecha"
+autoplay = "movderecha"
+frame_progress = 0.952579
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(71, 44)
+shape = SubResource("CapsuleShape2D_c6vw0")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="Area2D" type="Area2D" parent="Sprite2D"]
+position = Vector2(-7, 22)
+script = ExtResource("3_ijawp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D"]
+position = Vector2(79, 23)
+shape = SubResource("CircleShape2D_mstnk")
+
+[connection signal="body_entered" from="Sprite2D/Area2D" to="Sprite2D/Area2D" method="_on_body_entered"]
