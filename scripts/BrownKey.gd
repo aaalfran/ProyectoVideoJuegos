@@ -14,5 +14,8 @@ func _process(delta):
 func _on_body_entered(body):
 	if body.is_in_group("Player"):
 		emit_signal("brownkey1")
+		var brownKey1 = get_parent().get_node("personajePrincipal/HUD/BrownKey1")
+		brownKey1.visible = true
+		print(brownKey1)
 		queue_free()
 		

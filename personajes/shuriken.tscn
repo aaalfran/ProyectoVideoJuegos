@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scripts/shuriken.gd" id="1_l03kv"]
 [ext_resource type="Texture2D" uid="uid://cgphbm57056k1" path="res://assets/Tilesets/Objects/Suriken.png" id="2_bjiot"]
-[ext_resource type="Script" path="res://scripts/trampas.gd" id="3_7dhl8"]
+[ext_resource type="Script" path="res://scripts/shurikenArea.gd" id="3_e01so"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qb7gu"]
 atlas = ExtResource("2_bjiot")
@@ -75,7 +75,7 @@ height = 24.0
 [sub_resource type="CircleShape2D" id="CircleShape2D_mstnk"]
 radius = 25.02
 
-[node name="shuriken" type="CharacterBody2D"]
+[node name="shuriken" type="CharacterBody2D" groups=["shuriken"]]
 slide_on_ceiling = false
 script = ExtResource("1_l03kv")
 
@@ -95,7 +95,7 @@ shape = SubResource("CapsuleShape2D_c6vw0")
 
 [node name="Area2D" type="Area2D" parent="Sprite2D"]
 position = Vector2(-7, 22)
-script = ExtResource("3_7dhl8")
+script = ExtResource("3_e01so")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D"]
 position = Vector2(79, 23)

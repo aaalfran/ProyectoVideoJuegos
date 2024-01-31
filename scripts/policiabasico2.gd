@@ -30,7 +30,7 @@ func _process(delta):
 		$AnimatedSprite2D.play("mov arriba")
 		$VisualCone2.flip_h = true
 		$VisualCone2.position.y = $VisualCone2.position.y -290
-		print($VisualCone2.position.y)
+		#print($VisualCone2.position.y)
 		movespeed = -movespeed
 		has_adjusted_position2 = true 
 		

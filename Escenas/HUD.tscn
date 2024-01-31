@@ -1,0 +1,84 @@
+[gd_scene load_steps=6 format=3 uid="uid://b1roi2u1owf5y"]
+
+[ext_resource type="Texture2D" uid="uid://cwob81vqocal3" path="res://assets/Tilesets/Colored_Assets/green_key.png" id="1_fno4d"]
+[ext_resource type="Script" path="res://scripts/HUD.gd" id="1_jwu0x"]
+[ext_resource type="Texture2D" uid="uid://bnfb84rspih5b" path="res://assets/Tilesets/Colored_Assets/brown_key.png" id="2_3xkxm"]
+[ext_resource type="Texture2D" uid="uid://cjg3iifx54ccu" path="res://assets/Tilesets/Colored_Assets/red_key.png" id="3_istbc"]
+[ext_resource type="Texture2D" uid="uid://deyqn2ssqoahr" path="res://assets/Tilesets/Objects/heart.png" id="5_wr67l"]
+
+[node name="HUD" type="Control"]
+z_index = 4
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_jwu0x")
+metadata/_edit_lock_ = true
+
+[node name="GreenKey" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(80, 616)
+texture = ExtResource("1_fno4d")
+
+[node name="BrownKey2" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(176, 616)
+texture = ExtResource("2_3xkxm")
+
+[node name="RedKey" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(112, 616)
+texture = ExtResource("3_istbc")
+
+[node name="BrownKey1" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(144, 616)
+texture = ExtResource("2_3xkxm")
+
+[node name="Camera2dHUD" type="Camera2D" parent="."]
+position = Vector2(581, 325)
+limit_smoothed = true
+metadata/_edit_lock_ = true
+
+[node name="Health1" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 16.0
+offset_right = 96.0
+offset_bottom = 64.0
+texture = ExtResource("5_wr67l")
+expand_mode = 2
+
+[node name="Health2" type="TextureRect" parent="."]
+offset_left = 96.0
+offset_top = 16.0
+offset_right = 144.0
+offset_bottom = 64.0
+texture = ExtResource("5_wr67l")
+expand_mode = 2
+
+[node name="Health3" type="TextureRect" parent="."]
+offset_left = 144.0
+offset_top = 16.0
+offset_right = 192.0
+offset_bottom = 64.0
+texture = ExtResource("5_wr67l")
+expand_mode = 2
+
+[node name="Health4" type="TextureRect" parent="."]
+offset_left = 192.0
+offset_top = 16.0
+offset_right = 240.0
+offset_bottom = 64.0
+texture = ExtResource("5_wr67l")
+expand_mode = 2
+
+[node name="Health5" type="TextureRect" parent="."]
+offset_left = 240.0
+offset_top = 16.0
+offset_right = 288.0
+offset_bottom = 64.0
+texture = ExtResource("5_wr67l")
+expand_mode = 2

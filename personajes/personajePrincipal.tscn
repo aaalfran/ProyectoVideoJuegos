@@ -1,7 +1,8 @@
-[gd_scene load_steps=27 format=3 uid="uid://81h8tudlyxjc"]
+[gd_scene load_steps=28 format=3 uid="uid://81h8tudlyxjc"]
 
 [ext_resource type="Script" path="res://personajes/personajePrincipal.gd" id="1_7a66b"]
 [ext_resource type="Texture2D" uid="uid://bgan53cdpftq7" path="res://assets/Tilesets/Characters/personaje.png" id="2_8rx5x"]
+[ext_resource type="PackedScene" uid="uid://b1roi2u1owf5y" path="res://Escenas/HUD.tscn" id="3_g2p2j"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_262rs"]
 radius = 23.0
@@ -230,7 +231,7 @@ scale = Vector2(1.9375, 1.96875)
 texture = ExtResource("2_8rx5x")
 hframes = 12
 vframes = 8
-frame = 52
+frame = 64
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(6, 16)
@@ -249,3 +250,9 @@ parameters/conditions/idle = false
 parameters/conditions/is_moving = false
 parameters/idle/blend_position = Vector2(0, 0)
 parameters/walk/blend_position = Vector2(0, 0)
+
+[node name="HUD" parent="." instance=ExtResource("3_g2p2j")]
+offset_left = -581.0
+offset_top = -326.0
+offset_right = 580.0
+offset_bottom = 319.0

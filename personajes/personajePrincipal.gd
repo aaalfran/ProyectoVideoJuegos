@@ -79,3 +79,7 @@ func _on_exit_tower_4_leave_tower_4():
 func _on_area_2d_brown_door_salida_completa():
 	self.position.x = 960
 	self.position.y = 1300
+
+
+func _on_green_key_puerta_llave_verde():
+	pass # Replace with function body.

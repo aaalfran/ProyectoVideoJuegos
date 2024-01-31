@@ -1,5 +1,5 @@
 extends Area2D
-signal puerta_llave
+signal puerta_llaveVerde
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -13,6 +13,15 @@ func _process(delta):
 
 func _on_body_entered(body):
 	if body.is_in_group("Player"):
-		emit_signal("puerta_llave")
+		emit_signal("puerta_llaveVerde")
+		var greenKey = get_node("../personajePrincipal_Cell/HUD/GreenKey")
+		greenKey.visible = true
+		print(greenKey)
+		var sound_player = AudioStreamPlayer.new()
+		add_child(sound_player)
+		var sound = preload("res://Sound/take_key.wav") 
+		sound_player.stream = sound
+		
+		sound_player.play()
 		queue_free()
 		
