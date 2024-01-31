@@ -1,6 +1,5 @@
+res://Escenas/Patio.tscn
 res://Escenas/PrisionCell.tscn
 res://Escenas/tile_screen.tscn
 res://Escenas/end.tscn
-res://Escenas/Patio.tscn
-res://personajes/barco.tscn
-res://scripts/barco.gd
+res://Escenas/CellBlock.tscn
