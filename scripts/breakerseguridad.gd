@@ -20,6 +20,13 @@ func _input(event):
 			print("Apagaste la camara africana de seguridad")
 			emit_signal("SecurityCameraOff")
 			SecurityCameraisShut = true
+			
+			var sound_player = AudioStreamPlayer.new()
+			add_child(sound_player)
+			var sound = preload("res://Sound/sabotage.wav") 
+			sound_player.stream = sound
+			sound_player.play()
+			await get_tree().create_timer(0.4).timeout 
 
 
 
